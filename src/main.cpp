@@ -36,12 +36,11 @@ int main()
     ImGui_ImplOpenGL3_Init("#version 460");
 
     glEnable(GL_DEPTH_TEST);
-
     while (!glfwWindowShouldClose(window))
     {
         glfwPollEvents();
 
-        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplOpenGL3_NewFrame(); 
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
